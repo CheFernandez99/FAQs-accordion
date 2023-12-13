@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  
+    
+  
+<div class = "card">
+  <img src="images/icon-star.svg" id="star">
+  <h1>FAQs</h1>
+
+  <div class="Q1">
+    <button onclick="ShowHide()"class="Btn"><img src="images/icon-plus.svg" id="icon"></button>
+    <h3>What is Frontend Mentor, and how will it help me?</h3>
+    
+    
+  </div>
+
+  <div class="Answer">
+   <p>
+    Frontend Mentor offers realistic coding challenges to help developers improve their 
+   frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+   all levels and ideal for portfolio building.
+   </p> 
+  </div>
+ <div class="Q1">
+  <button onclick="ShowHide1()"class="Btn1"><img src="images/icon-plus.svg" id="icon1"></button>
+  <h3>Is Frontend Mentor free?</h3>
+  
+ </div>
+ 
+  <div class="Answer1">
+    <p>
+    Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+   option providing access to a range of projects suitable for all skill levels.
+   </p>
+ </div>
+  
+<div class="Q1">
+  <button onclick="ShowHide2()"class="Btn2"><img src="images/icon-plus.svg" id="icon2"></button>
+  <h3>Can I use Frontend Mentor projects in my portfolio?</h3>
+  
+</div>
+ 
+<div class="Answer2">
+  <p>
+    Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!
+  </p>
+</div>
+  
+<div class="Q1">
+  <button onclick="ShowHide3()"class="Btn3"><img src="images/icon-plus.svg" id="icon3"></button>
+  <h3>How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+ 
+</div>
+ 
+  <div class="Answer3">
+    <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+    channel where you can ask questions and seek support from other community members.</p>
+  </div>
+ 
+</div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Che Fernandez</a>.
+    </div>
+  </footer>
+<script>
+const Btn = document.querySelector(".Btn");
+const answers = document.querySelector(".Answer");
+const iconPlus= document.querySelector("#icon");
+
+ answers.style.display="none";
+
+function ShowHide (){
+  if(Btn.clicked){
+ answers.style.display="block";
+ iconPlus.src="images/icon-minus.svg";
+
+}else{
+  answers.style.display="none";
+  iconPlus.src="images/icon-plus.svg";
+}
+};
+Btn.addEventListener ('click',function(){
+Btn.clicked =!Btn.clicked;
+  ShowHide();
+});
+
+const Btn1 = document.querySelector(".Btn1");
+const answers1 = document.querySelector(".Answer1");
+const iconPlus1= document.querySelector("#icon1");
+
+ answers1.style.display="none";
+
+function ShowHide1 (){
+  if(Btn1.clicked){
+ answers1.style.display="block";
+ iconPlus1.src="images/icon-minus.svg";
+
+}else{
+  answers1.style.display="none";
+  iconPlus1.src="images/icon-plus.svg";
+}
+};
+Btn1.addEventListener ('click',function(){
+Btn1.clicked =!Btn1.clicked;
+  ShowHide1();
+});
+
+const Btn2 = document.querySelector(".Btn2");
+const answers2 = document.querySelector(".Answer2");
+const iconPlus2= document.querySelector("#icon2");
+
+ answers2.style.display="none";
+
+function ShowHide2 (){
+  if(Btn2.clicked){
+ answers2.style.display="block";
+ iconPlus2.src="images/icon-minus.svg";
+
+}else{
+  answers2.style.display="none";
+  iconPlus2.src="images/icon-plus.svg";
+}
+};
+Btn2.addEventListener ('click',function(){
+Btn2.clicked =!Btn2.clicked;
+  ShowHide2();
+});
+
+const Btn3 = document.querySelector(".Btn3");
+const answers3 = document.querySelector(".Answer3");
+const iconPlus3= document.querySelector("#icon3");
+
+ answers3.style.display="none";
+
+function ShowHide3 (){
+  if(Btn3.clicked){
+ answers3.style.display="block";
+ iconPlus3.src="images/icon-minus.svg";
+
+}else{
+  answers3.style.display="none";
+  iconPlus3.src="images/icon-plus.svg";
+}
+};
+Btn3.addEventListener ('click',function(){
+Btn3.clicked =!Btn3.clicked;
+  ShowHide3();
+});
+
+
+
+</script>
+</body>
+</html>
